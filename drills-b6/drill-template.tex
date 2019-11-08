@@ -1,6 +1,6 @@
 \documentclass[8pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paperheight=140mm,paperwidth=90mm,landscape,margin=0mm]{geometry}
+\usepackage[b6paper,landscape,margin=5mm]{geometry} % B6	125 x 176 mm	4.9 x 6.9 in
 \usepackage{tabulary}
 \usepackage{multirow}
 \usepackage{caption}
@@ -11,13 +11,13 @@
 
 \begin{document}
 
-\begin{minipage}[t]{3.5cm} 
+\begin{minipage}[t]{4cm} 
 	\includegraphics[width=2cm, height=2cm]{DC.png}
 	% Required Equipment
-	\begin{tabular}{p{3cm}}
+	\begin{tabular}{p{3.5cm}}
 		\small Required Materials \\
 		\hline
-		\tiny \begin{itemize}[topsep=0pt, partopsep=0pt]
+		\small \begin{itemize}[leftmargin=\parindent,align=left,labelwidth=\parindent,labelsep=0pt]
 			\item Target type: \includegraphics[width=0.5cm, height=0.5cm]{circle-target.png}
 			\item two 
 		\end{itemize}				
@@ -25,42 +25,42 @@
 	\end{tabular}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{9.5cm}
+\begin{minipage}[t]{12.5cm}
 	\begin{minipage}[t]{3cm}
 		% EXERCISE NAME
 		\begin{tabular}{ p{3cm} }			
-			\large Drill\\[1cm]			
+			\huge Drill\\[1cm]			
 		\end{tabular}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[t]{6cm}
+	\begin{minipage}[t]{8cm}
 		% Basic Info
-		\begin{tabular}{ | p{1.5cm} | p{1cm} | p{1cm} |}
+		\begin{tabular}{ p{2cm} | p{1.5cm} | p{1.5cm}}
+			
+			\small Weapon Type & \small Distance & \small Par \\ 
 			\hline
-			\tiny Weapon Type & \tiny Distance & \tiny Par \\ 
-			\hline
-			\tiny Any & \tiny 5m & \tiny 4s \\ 
-			\hline
+			\small Any & \small 5m & \small 4s \\ 
+			
 		\end{tabular}
 	\end{minipage}
 	% Steps and Scoring	
-	\begin{tabular}{ | p{8.5cm} |}
+	\begin{tabular}{ | p{11cm} |}
 		\hline
 		Steps\\ 
 		\hline
-		\tiny \begin{enumerate}[topsep=0pt, partopsep=0pt]
+		\small \begin{enumerate}[topsep=0pt, partopsep=0pt]
 			\item one
 			\item two
 		\end{enumerate}		
-		\\ [2cm]
+		\\ [4cm]
 		\hline
 		Scoring \\
 		\hline
-		\tiny \begin{itemize}[topsep=0pt, partopsep=0pt]
+		\small \begin{itemize}[topsep=0pt, partopsep=0pt]
 			\item one
 			\item two
 		\end{itemize}		
-		\\ [2cm]
+		\\ [3cm]
 		\hline
 	\end{tabular}
 \end{minipage}
