@@ -10,45 +10,64 @@
 
 \begin{document}
 
-\begin{minipage}[t]{2cm} 
+\begin{minipage}[t][2cm][t]{2cm} 
 	\includegraphics[width=2cm, height=2cm]{DC.png}
-	% STAMPS
-	\begin{tabular}{p{1.5cm}|}
-		\\
+\end{minipage}
+\hfill
+\begin{minipage}[t][2cm][t]{11cm}
+	% Weapon system
+	\begin{tabular}{ p{5cm} l  }			
+		\huge Weapon System & 
+			\begin{tabular}{ | p{3cm} | }
+			\hline
+			\large Loadout ID \\ 
+			\hline
+			 \\[0.5cm]
+			\hline
+		\end{tabular}\\[1.5cm]
+	\end{tabular}
+\end{minipage}
+
+\begin{minipage}{7cm}
+	\begin{tabular}{| p{2.5cm} | p{2.5cm} |}
 		\hline
-		\\[5.5cm]
+		\multicolumn{2}{|l|}{\large Firearm Data} \\
+		\hline
+	    Category & \\[0.3cm]
+		\hline
+	    Make & \\[0.3cm]
+	    \hline
+	    Model & \\[0.3cm]
+	    \hline
+	    Caliber & \\[0.3cm]
+	    \hline 
+	    Barrel Length & \\[0.3cm]
+	    \hline 
+	    Barrel Profile & \\[0.3cm]
+	    \hline 
+	    Magazine Size & \\[0.3cm]
+	    \hline        
 	\end{tabular}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{11cm}
-	\begin{minipage}[t]{2cm}
-		% EXERCISE NAME
-		\begin{tabular}{ p{8cm} }			
-			\huge Weapon Systems\\[1cm]			
-		\end{tabular}
-	\end{minipage}
-		
-	% DATA TABLE	
-	\begin{tabular}{ | p{1.5cm} | p{1cm} | p{1cm} | p{1cm} | p{1cm} | p{1cm} | p{1cm} |}
+\begin{minipage}{7cm}
+	\begin{tabular}{| p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 		\hline
-		\tiny Loadout Name & Make & Model & Caliber & Bullet Weight & Barrel Length &  \\ [2mm]
+		\multicolumn{3}{|l|}{\large Ammunition Data} \\
 		\hline
-		\tiny Make &  &  &  &  &  &  \\ [2mm]
+	     & Target & Defense \\
 		\hline
-		\tiny Model & & & & & & \\ [2mm]
-		\hline
-		\tiny Caliber & & & & & & \\ [2mm]
-		\hline
-		\tiny Bullet Weight & & & & & & \\ [2mm]
-		\hline
-		\tiny Barrel Length & & & & & & \\ [2mm]
-		\hline
-		\tiny Barrel Twist & & & & & & \\ [2mm]
-		\hline
-		\tiny Sight Profile & & & & & & \\ [2mm]
-		\hline
-		\tiny Magnification & & & & & & \\ [2mm]
-		\hline
+	    Caliber & & \\[0.5cm]
+	    \hline
+	    Weight & & \\[0.5cm]
+	    \hline
+	    Bullet Type & & \\[0.5cm]
+	    \hline 
+	    Ballisti Co. & & \\[0.5cm]
+	    \hline 
+	    Muzzle Energy & & \\[0.5cm]
+	    \hline 
 	\end{tabular}
 \end{minipage}
+
 \end{document}
