@@ -6,8 +6,9 @@
 \usepackage{caption}
 \usepackage[cc]{titlepic}
 \usepackage{graphicx}
-\graphicspath{ {../img/} }
+\graphicspath{ {../img/}{../../img/} }
 \usepackage{enumitem}
+\usepackage{afterpage}
 \usepackage{subfiles}
 
 \title{Firearms Drill Log Book}
@@ -15,14 +16,25 @@
 \titlepic{\includegraphics[width=0.3\textwidth]{DC.png}}
 
 \begin{document}
-\date{}
-\maketitle
-
-\section{}
-\subfile{pistol-section-title}
-
-\section{}
-\subfile{failure-to-stop}
-\subfile{failure-to-stop-log}
+	\date{}
+	\maketitle
+	\afterpage{\null\newpage}
 	
+	% Failure to Stop
+	\subfile{Drills/failure-to-stop}
+	\subfile{Logs/failure-to-stop-log}
+	\subfile{Logs/failure-to-stop-log}
+	\subfile{Logs/failure-to-stop-log}
+	\subfile{Logs/failure-to-stop-log}
+	\subfile{Logs/failure-to-stop-log}
+	
+	% Bill Drill
+	\subfile{Drills/bill-drill}
+	\subfile{Logs/bill-drill-log}
+	\subfile{Logs/bill-drill-log}
+	\subfile{Logs/bill-drill-log}
+	\subfile{Logs/bill-drill-log}
+	\subfile{Logs/bill-drill-log}
+	
+	\afterpage{\null\newpage}
 \end{document}
