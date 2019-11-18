@@ -1,17 +1,28 @@
 \documentclass[8pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paperheight=140mm,paperwidth=90mm,margin=0mm]{geometry}
-
-\usepackage{titlepic}
+\usepackage[paperheight=140mm,paperwidth=90mm,landscape,margin=0mm]{geometry}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage[cc]{titlepic}
 \usepackage{graphicx}
 \graphicspath{ {../img/} }
+\usepackage{enumitem}
+\usepackage{subfiles}
 
 \title{Firearms Drill Log Book}
 \author{DC Metro Socialist Rifle Association}
-\titlepic{\includegraphics[width=0.5\textwidth]{DC.png}}
+\titlepic{\includegraphics[width=0.3\textwidth]{DC.png}}
 
 \begin{document}
 \date{}
 \maketitle
+
+\section{}
+\subfile{pistol-section-title}
+
+\section{}
+\subfile{failure-to-stop}
+\subfile{failure-to-stop-log}
 	
 \end{document}
