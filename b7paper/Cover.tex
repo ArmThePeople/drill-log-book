@@ -1,0 +1,59 @@
+\documentclass[8pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=125mm,paperwidth=88mm,landscape,margin=2mm]{geometry} % B7 size 125mm x 88 mm
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage[cc]{titlepic}
+\usepackage{graphicx}
+\graphicspath{ {../img/}{../../img/} }
+\usepackage{enumitem}
+\setlist{leftmargin=2mm}
+
+\usepackage{afterpage}
+\usepackage{subfiles}
+
+\title{Firearms Drill Log Book}
+\author{DC Metro Socialist Rifle Association}
+\titlepic{\includegraphics[width=0.3\textwidth]{DC.png}}
+
+\begin{document}
+	\date{}
+	\maketitle
+	\afterpage{\null\newpage}
+	
+	% Armory Pages
+	\subfile{Armory-alt}
+	\subfile{Armory-alt}
+	\subfile{Armory-alt}
+	\subfile{Armory-alt}
+	\subfile{Armory-alt}
+	
+	% Drill Instruction Pages
+	\subfile{Drills/1-5-carbine-drill}
+	\subfile{Drills/bill-drill}
+	\subfile{Drills/box-drill}
+	\subfile{Drills/changing-gears-drill}
+	\subfile{Drills/failure-to-stop-drill}
+	\subfile{Drills/modified-up-drill}
+
+
+	% Logs
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	\subfile{Logs/drill-log-template}
+	
+	\afterpage{\null\newpage}
+\end{document}
