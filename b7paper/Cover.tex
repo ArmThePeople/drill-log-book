@@ -1,6 +1,6 @@
 \documentclass[8pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paperheight=125mm,paperwidth=88mm,landscape,margin=2mm]{geometry} % B7 size 125mm x 88 mm
+\usepackage[paperheight=140mm,paperwidth=90mm,landscape,margin=3mm]{geometry} % B7 size 125mm x 88 mm, Moleskin size 140mm x 90mm
 \usepackage{tabulary}
 \usepackage{multirow}
 \usepackage{caption}
@@ -27,18 +27,18 @@
 	\subfile{Drills/bill}
 	\subfile{Drills/box}
 	\subfile{Drills/changing-gears}
+	\subfile{Drills/el-presidente}
 	\subfile{Drills/failure-to-stop}
-	\subfile{Drills/modified-up}
-
+	\subfile{Drills/malfunction}
 
 	% Logs
-	\foreach \n in {1,...,6}{
+	\foreach \n in {1,...,10}{
 		\newpage
 		\subfile{Logs/drill-log-alt}
 	}
 
 	% Armory Pages
-	\foreach \n in {1,...,6}{\subfile{Armory}}
+	\foreach \n in {1,...,4}{\subfile{Armory}}
 	
 	\afterpage{\null\newpage}
 \end{document}
