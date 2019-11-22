@@ -9,7 +9,7 @@
 \graphicspath{ {../img/}{../../img/} }
 \usepackage{enumitem}
 \setlist{leftmargin=2mm}
-
+\usepackage{pgffor}
 \usepackage{afterpage}
 \usepackage{subfiles}
 
@@ -32,35 +32,13 @@
 
 
 	% Logs
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	\subfile{Logs/drill-log-alt}
-	\newpage
-	
+	\foreach \n in {1,...,6}{
+		\newpage
+		\subfile{Logs/drill-log-alt}
+	}
 
 	% Armory Pages
-	\subfile{Armory}
-	\subfile{Armory}
-	\subfile{Armory}
-	\subfile{Armory}
-	\subfile{Armory}
+	\foreach \n in {1,...,6}{\subfile{Armory}}
 	
 	\afterpage{\null\newpage}
 \end{document}
