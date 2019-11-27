@@ -1,64 +1,44 @@
 \documentclass[../Cover.tex]{subfiles}
 
 \begin{document}
-%	\begin{minipage}[t][0.15\textheight][t]{0.1\textwidth} 
-%		\includegraphics[width=\textwidth]{DC.png}
-%	\end{minipage}
-%	\hfill
-%	\begin{minipage}[t][0.15\textheight][t]{0.8\textwidth}
-%		\begin{tabular}{ p{0.3\textwidth} l  }
-%			\\		
-%			\textbf{Drill Name:} \\
-%			\\[0.03\textheight]
-%			\hline
-%		\end{tabular}
-%		\quad
-%		\small \begin{tabular}{ | p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} |}
-%			\hline
-%			Date & Loadout & Location\\ 
-%			\hline
-%			&  &  \\ 
-%			\hline
-%		\end{tabular}
-%	\end{minipage}
-%	
-%	\begin{tabular}{p{0.09\textwidth}|}
-%		Stamps \\
-%		\hline
-%		\\[0.65\textheight]
-%	\end{tabular}
-%	\quad
-%	\begin{tabular}{ | p{0.11\textwidth} | p{0.07\textwidth} | p{0.07\textwidth} | p{0.07\textwidth} | p{0.07\textwidth} | p{0.07\textwidth} | p{0.07\textwidth} |}
-%		\hline
-%		Round & 1 & 2 & 3 & 4 & 5 & 6 \\
-%		\hline
-%		\tiny Distance & & & & & & \\[0.05\textheight]
-%		\hline
-%		\tiny Start Position & & & & & & \\[0.05\textheight]
-%		\hline
-%		\tiny Time & & & & & & \\[0.05\textheight]
-%		\hline
-%		\tiny Points & & & & & & \\[0.05\textheight]
-%		\hline
-%		\tiny Hit Factor & & & & & & \\[0.05\textheight]
-%		\hline
-%		\tiny HF Goal & & & & & & \\[0.05\textheight]
-%		\hline
-%	\end{tabular}
 
-\begin{table}[]
-\caption{Drill Log}
-\label{tab:my-table}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
-\hline
-\multicolumn{3}{|l|}{\cellcolor[HTML]{329A9D}\textbf{Drill Name}} & \multicolumn{3}{l|}{\cellcolor[HTML]{329A9D}\textbf{Location}}                                               & \multicolumn{2}{l|}{\cellcolor[HTML]{329A9D}\textbf{Date}}              & \multicolumn{2}{l|}{\cellcolor[HTML]{329A9D}\textbf{Time}}              & \multicolumn{3}{l|}{\cellcolor[HTML]{329A9D}\textbf{Loadout}} & \multicolumn{3}{l|}{\cellcolor[HTML]{329A9D}\textbf{Ammo}} & \multicolumn{2}{l|}{\cellcolor[HTML]{329A9D}\textbf{Range}} & \multicolumn{2}{l|}{\cellcolor[HTML]{329A9D}\textbf{Start}} \\ \hline
-\multicolumn{3}{|l|}{}                                            & \multicolumn{3}{l|}{}                                                                                        & \multicolumn{2}{l|}{}                                                   & \multicolumn{2}{l|}{}                                                   & \multicolumn{3}{l|}{}                                         & \multicolumn{3}{l|}{}                                      & \multicolumn{2}{l|}{}                                       & \multicolumn{2}{l|}{}                                       \\ \hline
-\multicolumn{3}{|l|}{\cellcolor[HTML]{329A9D}\textbf{Round}}      & \cellcolor[HTML]{329A9D}\textbf{1} & \cellcolor[HTML]{329A9D}\textbf{2} & \cellcolor[HTML]{329A9D}\textbf{3} & \cellcolor[HTML]{329A9D}\textbf{4} & \cellcolor[HTML]{329A9D}\textbf{5} & \cellcolor[HTML]{329A9D}\textbf{6} & \cellcolor[HTML]{329A9D}\textbf{7} & \cellcolor[HTML]{329A9D}\textbf{8}        &         & \multicolumn{8}{c|}{\cellcolor[HTML]{329A9D}\textbf{Target Sketch}}                                                                                                                              \\ \cline{1-11} \cline{13-20} 
-\multicolumn{3}{|l|}{\textbf{Time}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
-\multicolumn{3}{|l|}{\textbf{Hits}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
-\multicolumn{3}{|l|}{\textbf{Misses}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
-\multicolumn{3}{|l|}{\textbf{Points}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
-\multicolumn{3}{|l|}{\textbf{Hit Factor}}                         &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{\multirow{-5}{*}{}}                                                                                                                                                          \\ \cline{1-11} \cline{13-20} 
-\end{tabular}
-\end{table}
+\begin{minipage}[t][0.15\textheight][t]{\textwidth}
+	\begin{tabular}{p{0.35\textwidth} p{0.6\textwidth}}
+	\includegraphics[width=0.1\textwidth]{DC.png} & \textbf{Drill Logs} \\
+	&\\[.5cm]
+	\end{tabular}
+\end{minipage}
+\begin{minipage}[t][0.85\textheight][t]{\textwidth}
+	%%%%%%%%%%%
+	% Table 1 %
+	%%%%%%%%%%%
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Drill Name}} & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Location}}                                               & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Date}}              & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Time}}              & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Loadout}} & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Ammo}} & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Range}} & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Start}} \\ \hline
+		\multicolumn{3}{|l|}{}                                            & \multicolumn{3}{l|}{}                                                                                        & \multicolumn{2}{l|}{}                                                   & \multicolumn{2}{l|}{}                                                   & \multicolumn{3}{l|}{}                                         & \multicolumn{3}{l|}{}                                      & \multicolumn{2}{l|}{}                                       & \multicolumn{2}{l|}{}                                       \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Round}}      & \cellcolor[HTML]{C0C0C0}\textbf{1} & \cellcolor[HTML]{C0C0C0}\textbf{2} & \cellcolor[HTML]{C0C0C0}\textbf{3} & \cellcolor[HTML]{C0C0C0}\textbf{4} & \cellcolor[HTML]{C0C0C0}\textbf{5} & \cellcolor[HTML]{C0C0C0}\textbf{6} & \cellcolor[HTML]{C0C0C0}\textbf{7} & \cellcolor[HTML]{C0C0C0}\textbf{8}        &         & \multicolumn{8}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Target Sketch}}                                                                                                                              \\ \cline{1-11} \cline{13-20} 
+		\multicolumn{3}{|l|}{\textbf{Time}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Hits}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Misses}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Points}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Hit Factor}}                         &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{\multirow{-5}{*}{}}                                                                                                                                                          \\ \cline{1-11} \cline{13-20} 
+	\end{tabular}
+	
+	%%%%%%%%%%%
+	% Table 2 %
+	%%%%%%%%%%%
+	\vspace*{0.02\textheight}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Drill Name}} & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Location}}                                               & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Date}}              & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Time}}              & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Loadout}} & \multicolumn{3}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Ammo}} & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Range}} & \multicolumn{2}{l|}{\cellcolor[HTML]{C0C0C0}\textbf{Start}} \\ \hline
+		\multicolumn{3}{|l|}{}                                            & \multicolumn{3}{l|}{}                                                                                        & \multicolumn{2}{l|}{}                                                   & \multicolumn{2}{l|}{}                                                   & \multicolumn{3}{l|}{}                                         & \multicolumn{3}{l|}{}                                      & \multicolumn{2}{l|}{}                                       & \multicolumn{2}{l|}{}                                       \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Round}}      & \cellcolor[HTML]{C0C0C0}\textbf{1} & \cellcolor[HTML]{C0C0C0}\textbf{2} & \cellcolor[HTML]{C0C0C0}\textbf{3} & \cellcolor[HTML]{C0C0C0}\textbf{4} & \cellcolor[HTML]{C0C0C0}\textbf{5} & \cellcolor[HTML]{C0C0C0}\textbf{6} & \cellcolor[HTML]{C0C0C0}\textbf{7} & \cellcolor[HTML]{C0C0C0}\textbf{8}        &         & \multicolumn{8}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Target Sketch}}                                                                                                                              \\ \cline{1-11} \cline{13-20} 
+		\multicolumn{3}{|l|}{\textbf{Time}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Hits}}                               &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Misses}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Points}}                             &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{}                                                                                                                                                                            \\ \cline{1-11}
+		\multicolumn{3}{|l|}{\textbf{Hit Factor}}                         &                                    &                                    &                                    &                                    &                                    &                                    &                                    &                                           &         & \multicolumn{8}{l|}{\multirow{-5}{*}{}}                                                                                                                                                          \\ \cline{1-11} \cline{13-20} 
+	\end{tabular}
+\end{minipage}
+
 \end{document}
